@@ -1,7 +1,7 @@
 {
-  "name": "Long name",
-  "shortname": "wails-svelte-vite-tailwind-template",
-  "author": "",
-  "description": "Description of the template",
-  "helpurl": "URL for help with the template, eg homepage"
+  "name": "Wails + Vite + Svelte + TailwindCSS (v3) template",
+  "shortname": "wails-vite-svelte-tailwind",
+  "author": "Bill Matlock (bill@billbuilt.com)",
+  "description": "Wails template built from using the Vite CLI tool and choosing the Svelte option and then manually installing TailwindCSS (v3)",
+  "helpurl": "https://github.com/BillBuilt/wails-vite-svelte-tailwind-template"
 }
