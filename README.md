@@ -40,6 +40,18 @@ As of this writing, Jan 2022, I have only tested this on macOS. I have yet to ge
 If you try this on Windows, I would appreciate it if you'd let me know how it went.
 
 
+## Wails version v2.0.0-beta.33 and later
+
+Starting with Wails version v2.0.0-beta.33 you can just use `wails dev` to start and monitor both frontend and backend changes simultaneously.
+
+There is a new config setting for `wails.json` called `frontend:dev:watcher`. Set its value to `vite build --watch` and clear the value for `frontend:dev`.
+At this point you should be able to just do `wails dev` and it will first launch the Vite watcher, then compile the app and launch it with just that one command.
+
+I will update these templates accordingly once more time has passed and no major issues have arisen. As of this writing (March, 2022) this is a brand new feature but one I thought was worth mentioning now.
+
+More information can be found here: https://wails.io/docs/reference/project-config
+
+
 ## Shout-Outs
 
 Being new to both Vite and Wails, the above-mentioned caveat gave me quite a fit for a while, 
