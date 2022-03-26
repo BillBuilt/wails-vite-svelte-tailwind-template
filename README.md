@@ -44,12 +44,29 @@ If you try this on Windows, I would appreciate it if you'd let me know how it we
 
 Starting with Wails version v2.0.0-beta.33 you can just use `wails dev` to start and monitor both frontend and backend changes simultaneously.
 
-There is a new config setting for `wails.json` called `frontend:dev:watcher`. Set its value to `vite build --watch` and clear the value for `frontend:dev`.
+There is a new config setting for `wails.json` called `frontend:dev:watcher`.
+Im my experience it's best to set its value to an `npm run` script command that is launching `vite build --watch` rather than entering `vite build --watch` for the value.
 At this point you should be able to just do `wails dev` and it will first launch the Vite watcher, then compile the app and launch it with just that one command.
 
-I will update these templates accordingly once more time has passed and no major issues have arisen. As of this writing (March, 2022) this is a brand new feature but one I thought was worth mentioning now.
+Example `frontend/package.json`:
+```
+ "scripts": {
+    "vite": "vite",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+  },
+```
 
-More information can be found here: https://wails.io/docs/reference/project-config
+And `wails.json`:
+```
+"frontend:build": "npm run build",
+"frontend:install": "npm install",
+"frontend:dev": "",
+"frontend:dev:watcher": "npm run dev",
+"wailsjsdir": "./frontend",
+```
+
 
 
 ## Shout-Outs
