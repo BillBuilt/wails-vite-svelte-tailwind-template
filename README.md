@@ -1,5 +1,8 @@
 # README
 
+*I have archived this repo due to ty inactivity, mostly on my part. I have become far less active in Svelte development and feel this repo has become stale.*
+
+
 ## About
 
 This is a Wails template using Svelte with Vite for asset bundling as well as Tailwind CSS.
